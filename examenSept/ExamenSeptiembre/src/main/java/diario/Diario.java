@@ -30,9 +30,10 @@ public class Diario {
 	public void setPulpo(Boolean pulpo) {
 		this.pulpo = pulpo;
 	}
+	
 	//Averigua si el evento que especificamos está en la lista de los eventos que han ocurrido ese día.
 	public boolean contieneEvento(String evento, List<String> eventos) {
-		for (int i = 0; i <= eventos.size(); i++) {
+		for (int i = 0; i <= eventos.size();) {
 			if (evento == eventos.get(i)) {
 				return true;
 			}
